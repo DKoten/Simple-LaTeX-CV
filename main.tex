@@ -1,0 +1,140 @@
+
+\documentclass{report} %document type
+
+%--------------------------------------------Addtional Packages--------------------------------------------%
+
+\usepackage{graphicx} %adds Images
+\usepackage[document]{ragged2e}
+\usepackage{titlesec} %adds Tittles
+\usepackage{enumitem} %adds Bullets/Numbering 
+\usepackage{geometry} %adds geometry
+\usepackage{caption}  %adds captions
+\usepackage{fancyhdr} %adds fancy headers
+\usepackage[T1]{fontenc} %adds fonts
+\usepackage{lmodern}  %changes font
+
+%---------------------------------------------------------------------------------------------------------%
+
+\geometry{
+  a4paper,            %paper type
+  left=27.5mm,        %left spacing
+  right=27.5mm,       %right spacing
+  headheight=4cm,
+  top=3cm,            %top spacing
+  bottom=3cm,         %bottom spacing
+  footskip=4cm
+}
+
+%---------------------------------------------------------------------------------------------------------%
+
+\begin{document}
+\thispagestyle{empty} %removes the page number page
+
+%-----------------------------------------------Presentation-----------------------------------------------%
+
+\noindent
+\begin{minipage}{0.5\textwidth}
+    \huge \textbf{Your Name} 
+    \vspace{3mm} %give a little space between lines 3mm in this case
+    \small \newline \textbf{Date of birth:} XX/XX/XX
+    \small \newline \textbf{Nationality:} XXX
+    \small \newline \textbf{Gender:} XXX
+    \small \newline \textbf{Phone Number:} (+XXX) XXX 
+    \small \newline \textbf{Email Address:} XXX 
+    \small \newline \textbf{Address:} XXX, XXX %example Berlin, Germany
+\end{minipage}
+    \hspace{0.05\textwidth}
+\begin{minipage}{0.4\textwidth}
+    \raggedleft %pushes the picture to the right
+    \includegraphics[width=3.5cm]{profile} 
+    %select the with of the profile picture and the actual file of the picture
+\end{minipage}
+
+%------------------------------------------------Experience------------------------------------------------%
+
+\section*{Experience}
+\small %changes the font size to small
+\begin{itemize}
+    \item{\small \textbf{XXX}} %task/function you did in the company %example: senior backend developer
+    \newline \footnotesize \textbf{XX/XX/XX - XX/XX/XX} %starting and finishing dates
+    \begin{itemize}
+        \item XXX %specific tasks
+        \item XXX
+        \item XXX
+        \item XXX
+    \end{itemize}
+\end{itemize}
+\vspace{3mm} %give a little space between lines 5mm in this case
+\begin{itemize}
+    \item{\small \textbf{XXX}} %task/function you did in the company
+    \newline \footnotesize \textbf{XX/XX/XX - XX/XX/XX} %starting and finishing dates
+    \begin{itemize}
+        \item XXX
+        \item XXX
+        \item XXX
+        \item XXX
+    \end{itemize}
+\end{itemize}
+
+%-------------------------------------------------Education------------------------------------------------%
+
+\section*{Education}
+\small
+\begin{itemize}
+    \item{\small \textbf{XXX}} %example: balcheor's degree in ...
+    \newline \footnotesize \textbf{XXX - XXX} %year - year
+    \begin{itemize}
+        \small
+        \item XXX %what did you learn
+        \item XXX
+        \item XXX
+    \end{itemize}
+\end{itemize}
+\vspace{3mm} %give a little space between lines 5mm in this case
+\begin{itemize}
+    \item{\small \textbf{XXX}} %example: balcheor's degree in ...
+    \newline \footnotesize \textbf{XXX - XXX} %year - year
+    \begin{itemize}
+        \small
+        \item XXX %what did you learn
+        \item XXX
+        \item XXX
+    \end{itemize}
+\end{itemize}\par
+
+%---------------------------------------------Language Skills----------------------------------------------%
+
+\newpage %page break
+%language skills done, if needed make some adjusts
+\subsection*{Language Skills}
+\small
+\begin{itemize}
+    \item[] 
+    \begin{itemize}
+        \item XXX (XXX) %language (level)
+        \item XXX
+        \item XXX
+        \item XXX
+    \end{itemize}
+\end{itemize}
+\thispagestyle{empty} %removes the page number page
+
+%------------------------------------------Additional Information------------------------------------------%
+
+\subsection*{Additional Information}
+\small
+\begin{itemize}
+    \item[] 
+    \begin{itemize}
+        \item XXX %other skills
+        \item XXX %word, powerpoint & exel
+        \item XXX %driving licence
+        \item XXX
+        \item XXX
+        \item XXX
+    \end{itemize}
+\end{itemize}
+
+%---------------------------------------------------------------------------------------------------------%
+
+\end{document} %ends the document
